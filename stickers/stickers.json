@@ -1,0 +1,275 @@
+{
+ "note": "eye_left/eye_right are pixel coords of the hamster's eyes; expr is which face it gets shown for",
+ "stickers": [
+  {
+   "file": "bicep.jpg",
+   "eye_left": [
+    390,
+    292
+   ],
+   "eye_right": [
+    530,
+    292
+   ],
+   "expr": "happy"
+  },
+  {
+   "file": "cross arms .jpg",
+   "eye_left": [
+    503,
+    457
+   ],
+   "eye_right": [
+    725,
+    457
+   ],
+   "expr": "blink"
+  },
+  {
+   "file": "happylollypop.webp",
+   "eye_left": [
+    253,
+    265
+   ],
+   "eye_right": [
+    389,
+    265
+   ],
+   "expr": "open"
+  },
+  {
+   "file": "hewo pwincess.jpg",
+   "eye_left": [
+    390,
+    286
+   ],
+   "eye_right": [
+    514,
+    286
+   ],
+   "expr": "neutral"
+  },
+  {
+   "file": "look down side .jpg",
+   "eye_left": [
+    439,
+    265
+   ],
+   "eye_right": [
+    549,
+    259
+   ],
+   "expr": "down"
+  },
+  {
+   "file": "nerd.jpg",
+   "eye_left": [
+    258,
+    292
+   ],
+   "eye_right": [
+    420,
+    292
+   ],
+   "expr": "neutral"
+  },
+  {
+   "file": "one finger mouth .jpg",
+   "eye_left": [
+    166,
+    125
+   ],
+   "eye_right": [
+    221,
+    128
+   ],
+   "expr": "open"
+  },
+  {
+   "file": "plushie.jpg",
+   "eye_left": [
+    294,
+    113
+   ],
+   "eye_right": [
+    419,
+    113
+   ],
+   "expr": "happy"
+  },
+  {
+   "file": "pokerham.jpg",
+   "eye_left": [
+    294,
+    318
+   ],
+   "eye_right": [
+    426,
+    318
+   ],
+   "expr": "neutral"
+  },
+  {
+   "file": "think .jpg",
+   "eye_left": [
+    309,
+    304
+   ],
+   "eye_right": [
+    412,
+    304
+   ],
+   "expr": "neutral"
+  },
+  {
+   "file": "thumb.jpg",
+   "eye_left": [
+    375,
+    298
+   ],
+   "eye_right": [
+    507,
+    298
+   ],
+   "expr": "happy"
+  },
+  {
+   "file": "thumbs down.jpg",
+   "eye_left": [
+    368,
+    299
+   ],
+   "eye_right": [
+    507,
+    299
+   ],
+   "expr": "neutral"
+  },
+  {
+   "file": "sideyee.jpg",
+   "eye_left": [
+    404,
+    195
+   ],
+   "eye_right": [
+    536,
+    195
+   ],
+   "expr": "turn"
+  },
+  {
+   "file": "open wide.png",
+   "eye_left": [
+    143,
+    143
+   ],
+   "eye_right": [
+    215,
+    143
+   ],
+   "expr": "open"
+  },
+  {
+   "file": "magnifier.png",
+   "eye_left": [
+    108,
+    93
+   ],
+   "eye_right": [
+    153,
+    93
+   ],
+   "expr": "neutral"
+  },
+  {
+   "file": "tongue out.png",
+   "eye_left": [
+    248,
+    243
+   ],
+   "eye_right": [
+    492,
+    243
+   ],
+   "expr": "open"
+  },
+  {
+   "file": "big grin.png",
+   "eye_left": [
+    531,
+    420
+   ],
+   "eye_right": [
+    808,
+    420
+   ],
+   "expr": "happy"
+  },
+  {
+   "file": "angry steam.png",
+   "eye_left": [
+    207,
+    200
+   ],
+   "eye_right": [
+    288,
+    200
+   ],
+   "expr": "open"
+  },
+  {
+   "file": "blush smile.png",
+   "eye_left": [
+    180,
+    293
+   ],
+   "eye_right": [
+    316,
+    293
+   ],
+   "expr": "happy"
+  },
+  {
+   "file": "smug squint.png",
+   "eye_left": [
+    72,
+    54
+   ],
+   "eye_right": [
+    140,
+    54
+   ],
+   "expr": "blink"
+  },
+  {
+   "file": "crying.png",
+   "eye_left": [
+    228,
+    242
+   ],
+   "eye_right": [
+    312,
+    242
+   ],
+   "expr": "down"
+  },
+  {
+   "file": "pink lips.png",
+   "eye_left": [
+    114,
+    97
+   ],
+   "eye_right": [
+    154,
+    97
+   ],
+   "expr": "neutral"
+  }
+ ],
+ "thresholds_measured_on": {
+  "lift_neutral": -0.047,
+  "lift_smile": 0.06,
+  "open_neutral": 0.026,
+  "open_wide": 0.343
+ }
+}

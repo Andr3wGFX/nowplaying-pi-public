@@ -1,0 +1,9 @@
+# Installed into the ~/np venv by setup.sh.
+# OpenCV is deliberately NOT here: it comes from apt (python3-opencv), which the
+# venv sees because it's built with --system-site-packages. pip's OpenCV tries
+# to compile from source on ARM.
+st7789==1.0.1   # pinned: the program works around this exact version's RST bug
+spotipy
+requests
+pillow
+gpiozero

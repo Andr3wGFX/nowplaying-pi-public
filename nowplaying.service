@@ -1,0 +1,28 @@
+[Unit]
+Description=Spotify now-playing display
+# The program calls Spotify the moment it starts, so wait for real networking
+# rather than just for the interface to exist.
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=YOUR_USER
+Group=YOUR_USER
+WorkingDirectory=/home/YOUR_USER/np
+
+# systemd does NOT reliably set HOME for a User= service, and the program uses
+# Path.home() to find ~/np/.env, the photos and the token files. Without this
+# it starts up looking in / and finds nothing.
+Environment=HOME=/home/YOUR_USER
+Environment=PYTHONUNBUFFERED=1
+
+ExecStart=/home/YOUR_USER/np/bin/python /home/YOUR_USER/np/nowplaying.py
+
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,6 @@
+# Only needed for the hamster face filter (setup.sh installs it unless --no-hamster).
+# MediaPipe hard-depends on opencv-contrib-python, which pip would otherwise
+# take at 5.x -- a major version this code has never been run against. The pin
+# keeps it on the 4.x line.
+mediapipe
+opencv-contrib-python<5

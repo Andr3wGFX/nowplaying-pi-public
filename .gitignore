@@ -1,0 +1,33 @@
+# ---- secrets: NEVER commit ----------------------------------------------
+.env
+.gdrive-token.json
+.spotify-cache
+.cache*
+*.token
+np-backup*
+
+# ---- runtime state -----------------------------------------------------
+.uploaded.json
+captures/
+timelapse/
+
+# ---- the venv lives in ~/np, i.e. inside this repo ---------------------
+bin/
+lib/
+lib64
+include/
+share/
+pyvenv.cfg
+
+# ---- downloaded / personal / licence-restricted -------------------------
+*.task
+photos/*
+!photos/README.md
+fonts/*
+!fonts/README.md
+
+# ---- python / editor ---------------------------------------------------
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store

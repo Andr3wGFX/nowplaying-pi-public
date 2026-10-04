@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Pi Photo Booth</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin:0; padding:2.5rem 1.25rem; font:16px/1.65 system-ui,-apple-system,
+         "Segoe UI",Roboto,sans-serif; background:#fbfcfd; color:#1d2b3a; }
+  @media (prefers-color-scheme: dark){ body{background:#12171d;color:#e6edf4} }
+  main { max-width: 38rem; margin: 0 auto; }
+  h1 { font-size:1.6rem; margin:0 0 .3rem; letter-spacing:-.01em; }
+  .sub { color:#6b7d90; margin:0 0 2rem; }
+  h2 { font-size:1.05rem; margin:2rem 0 .5rem; }
+  ul { padding-left:1.15rem; } li { margin:.35rem 0; }
+  code { background:rgba(127,127,127,.16); padding:.1em .35em; border-radius:4px;
+         font-size:.9em; }
+  a { color:#2f6fd0; } @media (prefers-color-scheme: dark){ a{color:#6faaf5} }
+  footer { margin-top:2.5rem; padding-top:1.25rem; border-top:1px solid rgba(127,127,127,.25);
+           color:#6b7d90; font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Pi Photo Booth &middot; last updated 14 September 2026</p>
+
+  <p>Pi Photo Booth is a personal hobby application running on a single Raspberry
+  Pi owned and operated by one person. It has no server, no database, no user
+  accounts and no analytics.</p>
+
+  <h2>What it accesses</h2>
+  <p>The application requests a single Google scope,
+  <code>https://www.googleapis.com/auth/drive.file</code>, which grants access
+  only to files the application itself creates. It cannot read, list, modify or
+  delete any other file in the Google Drive account.</p>
+
+  <h2>What it does with it</h2>
+  <p>Photographs taken on the device are saved locally to the Pi and uploaded to
+  a single folder in the Drive account of the person who authorised it. That is
+  the only use.</p>
+
+  <h2>What it does not do</h2>
+  <ul>
+    <li>It does not read existing Drive files or folders.</li>
+    <li>It does not send data to any third party.</li>
+    <li>It does not collect analytics, telemetry or usage data.</li>
+    <li>It does not share, sell or transfer data to anyone.</li>
+    <li>It does not use Google user data to train any model.</li>
+  </ul>
+
+  <h2>Storage and retention</h2>
+  <p>Photos remain on the Pi's SD card and in the owner's own Drive folder until
+  the owner deletes them. The OAuth refresh token is stored on the Pi's local
+  filesystem with owner-only file permissions and is never transmitted anywhere
+  except to Google's own token endpoint.</p>
+
+  <h2>Revoking access</h2>
+  <p>Access can be withdrawn at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+  which immediately invalidates the stored token.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+
+  <footer><a href="./index.html">&larr; Pi Photo Booth</a></footer>
+</main>
+</body>
+</html>

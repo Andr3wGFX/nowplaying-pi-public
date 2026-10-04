@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pi Photo Booth</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin:0; padding:2.5rem 1.25rem; font:16px/1.65 system-ui,-apple-system,
+         "Segoe UI",Roboto,sans-serif; background:#fbfcfd; color:#1d2b3a; }
+  @media (prefers-color-scheme: dark){ body{background:#12171d;color:#e6edf4} }
+  main { max-width: 38rem; margin: 0 auto; }
+  h1 { font-size:1.7rem; margin:0 0 .3rem; letter-spacing:-.01em; }
+  .sub { color:#6b7d90; margin:0 0 2rem; }
+  h2 { font-size:1.05rem; margin:2rem 0 .5rem; }
+  code { background:rgba(127,127,127,.16); padding:.1em .35em; border-radius:4px;
+         font-size:.9em; }
+  a { color:#2f6fd0; } @media (prefers-color-scheme: dark){ a{color:#6faaf5} }
+  footer { margin-top:2.5rem; padding-top:1.25rem; border-top:1px solid rgba(127,127,127,.25);
+           color:#6b7d90; font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pi Photo Booth</h1>
+  <p class="sub">A personal Raspberry Pi desk display.</p>
+
+  <p>This is a hobby project running on a single Raspberry Pi on my desk. It shows
+  what I'm currently playing on Spotify, cycles through my own photos when the
+  music is paused, and has a camera mode that takes pictures with an attached
+  webcam.</p>
+
+  <h2>Why it asks for Google Drive access</h2>
+  <p>When I take a picture with the device, it saves the photo to the Pi and also
+  uploads a copy to a folder in my own Google Drive, so the pictures aren't
+  stranded on an SD card.</p>
+
+  <p>It requests one scope only:</p>
+  <p><code>https://www.googleapis.com/auth/drive.file</code></p>
+
+  <p>That scope is deliberately the narrowest one that can do the job. It only
+  grants access to files the application itself creates. It cannot read, list,
+  modify or delete anything else in the Drive account.</p>
+
+  <h2>Who it's for</h2>
+  <p>Me. It isn't distributed, sold, or offered to other users, and it has no
+  accounts, no server and no backend.</p>
+
+  <footer>
+    <a href="./privacy.html">Privacy policy</a> &middot;
+    Contact: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
+  </footer>
+</main>
+</body>
+</html>
